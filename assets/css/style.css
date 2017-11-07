@@ -1,0 +1,179 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #fff; 
+	font-size:14px; 
+	line-height:22px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #3e3749;
+}
+
+p  {
+	margin: 10px 0; 
+	color: #3e3749;
+}
+
+h1 {
+	font-size: 30px; 
+	font-weight: bold; 
+	margin-top: 50px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 18px; 
+	font-weight: normal; 
+	margin: 20px 0;
+}
+
+a, a:visited {
+	color: #3e3749;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #3e3749;
+	text-decoration: none;
+}
+
+#nav {
+	width: 960px;
+	height: 50px;
+	padding: 15px 0 0 0;
+	margin: 0 auto;
+}
+
+#nav a {
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 30px;
+	font-weight: bold;
+	color: #615a5d;
+}
+
+#nav a:hover {
+	display: inline-block;
+	text-decoration: none;
+}
+
+#nav ul {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 30px;
+}
+
+#nav ul li {
+	display: inline-block;
+}
+
+#nav ul li a {
+	padding: 7px 35px;
+	border-radius: 45px;
+	margin-right: 0;
+}
+
+#nav ul li a:hover {
+	background-color: #f2cc30;
+}
+
+#nav ul li a.current {
+	background-color: #f2cc30;
+}
+
+#nav p {
+	display: inline-block;
+	margin: 0 30px 0 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
+}
+
+#wrapper {
+	background: #3b3b3b url(../images/backgr.jpg) no-repeat;
+	width: 100%;
+}
+
+#content {
+	width: 70%;
+	margin: 0 auto;
+	padding: 5px 0 50px 0;
+}
+
+#content h1 {
+	color: #ffce00;
+	margin-bottom: 15px;
+}
+
+#content h1 span {
+	color: #fff;
+}
+
+#content table {
+	margin: 0 auto;
+	border-spacing: 10px;
+}
+
+#content td {
+	width: 252px;
+	height: 258px;
+}
+
+#content td.lpic {
+	background-image: url(../images/people1.png);
+	background-repeat: no-repeat;
+	text-align: right;
+}
+
+#content td.rpic {
+	background-image: url(../images/people2.png);
+	background-repeat: no-repeat;
+	text-align: left;
+}
+
+
+#content table td p {
+	background-color: #ffce00;
+	border-radius: 30px;
+	text-align: center;
+	height: 33px;
+	text-transform: uppercase;
+	font-weight: bold;
+	width: 80%;
+	display: inline-block;
+	padding: 10px 0;
+	margin: 0;
+	line-height: 16px;
+}
+
+#content table td p span {
+	display: inline-block;
+}
+
+#content table td.lpic p span {
+	padding: 9px 0 0 0;
+}
+
+#content table td {
+	vertical-align: bottom;
+}
+
+#content table tr.tbottom td {
+	vertical-align: top;
+}
+
+#content table tr.tbottom td p {
+	background-color: #c0a52f;
+}
+
+input {
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+.clear {
+	clear: both;
+}

@@ -1,0 +1,59 @@
+
+$font-size-hmc: 8px;
+$font-size-mc: 10px;
+$font-size-mc-half: 12px;
+$font-size-sm: 14px;
+$font-size-sm-half: 18px;
+$font-size-md: 24px; 
+$font-size-lg: 32px; 
+$font-size-xl: 42px;
+
+$color-lightgray: #58555c;
+
+$color-gray: #3e3749;
+$color-gray-light: #A09B9B;
+$color-gray-lighter: #bcbcbc;
+$color-gray-lightest: #f1f1f1;
+
+$nav-link-color: #615a5d;
+$nav-link-hover: #f2cc30;
+
+$content-yellow-none: #c0a52f;
+$content-yellow: #f2cc30;
+
+$color-blue         : #2d96d3;
+$color-blue-light   : #33b1ff;
+
+$color-green        : #38a127;
+$color-green-light  : #4bcc31;
+
+$color-orange       : #f07828;
+$color-orange-light : #ff8b2b;
+
+$color-yellow       : #f0c445;
+$color-yellow-light : #ffed4c;
+
+$color-red          : #b12929;
+$color-red-light    : #db3232;
+
+$animation-fast: .15s;
+$animation-normal: .3s;
+$animation-slow: .75s;
+
+$screen-xs          : 320px;
+$screen-sm          : 768px;
+$screen-md          : 998px;
+$screen-lg          : 1200px;
+$screen-xl          : 1440px;
+
+$offset-mc: 8px;
+$offset-sm: 12px;
+$offset-md: 16px;
+$offset-lg: 32px;
+$offset-xl: 64px;
+
+$primary            : $color-blue;
+$success            : $color-green;
+$warning            : $color-orange;
+$danger             : $color-red;
+$accent             : $color-yellow;

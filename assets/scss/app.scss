@@ -1,0 +1,55 @@
+@import './reset';
+@import './variables';
+@import './share/wrapper';
+@import './share/content';
+@import './share/input/input';
+@import './share/input/inputbox';
+@import './share/input/checkbox';
+@import './share/link';
+@import './share/preloader';
+@import './share/animations';
+@import './header/h-nav';
+@import './header/h-phone';
+@import './header/h-login';
+@import './home/home';
+@import './home/home_welcome';
+@import './home/home_panel';
+
+@import './photographers/photographers';
+@import './photographers/photographers_list';
+@import './photographers/photographers_item';
+@import './photographers/photographers_profile';
+@import './photographers/photographers_previews';
+
+@import './registration/registration';
+@import './registration/regform';
+
+@import './share/button/button';
+@import './share/overlay';
+@import './share/popup';
+@import './share/tabs/tabs';
+
+@import './footer/footer';
+@import './footer/footer_socials';
+@import './footer/footer_docs';
+
+.success {
+    color: $success;
+    border-color: $success;
+}
+.warning {
+    color: $warning;
+    border-color: $warning;
+}
+.text__success {
+    color: $success;
+}
+.text__warning {
+    color: $warning;
+}
+.text__danger {
+    color: $danger;
+}
+.text__accent {
+    color: $accent;
+}

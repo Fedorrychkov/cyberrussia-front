@@ -6,7 +6,7 @@ $(document).ready(function() {
         var formdata = $(this).parent().parent('form');
         $.ajax({
             type: "POST",
-            url: "",
+            url: "/regist.php",
             data: formdata,
             success: function(msg){
                 
@@ -19,7 +19,7 @@ $(document).ready(function() {
         var formdata = $(this).parent().parent('form');
         $.ajax({
             type: "GET",
-            url: "",
+            url: "/autorize.php",
             data: formdata,
             success: function(msg){
                 

@@ -1,0 +1,28 @@
+@import '../variables';
+
+.class {
+    display: flex;
+    width: 50%;
+    align-items: top;
+    justify-content: flex-start;
+    padding: 0 $offset-md;
+    margin: $offset-sm 0;
+    &-flex {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+    &-prev {
+        display: inline-block;
+    }
+    &-desc {
+        margin-left: 20px;
+        margin-top: $offset-sm;
+        display: inline-block;
+        text-align: left;
+    }
+
+    &:hover {
+    }
+}

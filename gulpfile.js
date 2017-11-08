@@ -29,7 +29,7 @@ var gulp         = require('gulp'), // Подключаем Gulp
 
     gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
-        proxy: "localhost/cyberrussiaFront/",
+        proxy: "localhost/cyberfront",
         notify: true
     });
     });
@@ -44,23 +44,23 @@ var gulp         = require('gulp'), // Подключаем Gulp
         .pipe(gulp.dest('assets/js')); // Выгружаем в папку app/js
     });
 
-    gulp.task('js-libs', function() {
-    return gulp.src('assets/js/**/*.js')
+    gulp.task('js', function() {
+    return gulp.src(['assets/js/**/*.js', '!assets/assets/js/libs.min.js'])
         .pipe(concat('app.js')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(uglify()) // Сжимаем JS файл
         .pipe(gulp.dest('assets/js')); // Выгружаем в папку app/js
     });
 
     gulp.task('css-libs', ['sass'], function() {
-    return gulp.src('app/css-libs/*.css') // Выбираем файл для минификации
+    return gulp.src('assets/css-libs/*.css') // Выбираем файл для минификации
         .pipe(cssnano()) // Сжимаем
-        .pipe(rename({suffix: '.min'})) // Добавляем суффикс .min
-        .pipe(gulp.dest('app/css')); // Выгружаем в папку app/css
+        .pipe(rename('main.min.css')) // Добавляем суффикс .min
+        .pipe(gulp.dest('assets/css')); // Выгружаем в папку app/css
     });
 
-    gulp.task('watch', ['browser-sync', 'css-libs', 'js', 'js-libs'], function() {
+    gulp.task('watch', ['browser-sync', 'css-libs', 'js-libs'], function() {
     gulp.watch('assets/scss/**/*.scss', ['sass']); // Наблюдение за sass файлами в папке sass
-    gulp.watch('pages/**/*.php', browserSync.reload); // Наблюдение за PHP файлами в корне проекта
+    gulp.watch('*.php', browserSync.reload); // Наблюдение за PHP файлами в корне проекта
     gulp.watch('assets/js/**/*.js', browserSync.reload);   // Наблюдение за JS файлами в папке js
     });
 

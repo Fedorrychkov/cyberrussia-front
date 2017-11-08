@@ -1,0 +1,11 @@
+.popup {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+
+    &-title {
+        font-size: 2.9rem;
+    }
+}

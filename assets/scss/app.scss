@@ -1,37 +1,16 @@
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
 @import './reset';
 @import './variables';
-@import './share/wrapper';
-@import './share/content';
-@import './share/input/input';
-@import './share/input/inputbox';
-@import './share/input/checkbox';
-@import './share/link';
-@import './share/preloader';
-@import './share/animations';
-@import './header/h-nav';
-@import './header/h-phone';
-@import './header/h-login';
-@import './home/home';
-@import './home/home_welcome';
-@import './home/home_panel';
 
-@import './photographers/photographers';
-@import './photographers/photographers_list';
-@import './photographers/photographers_item';
-@import './photographers/photographers_profile';
-@import './photographers/photographers_previews';
+@import './shared/popup';
+@import './shared/chatlog';
 
-@import './registration/registration';
-@import './registration/regform';
-
-@import './share/button/button';
-@import './share/overlay';
-@import './share/popup';
-@import './share/tabs/tabs';
-
-@import './footer/footer';
-@import './footer/footer_socials';
-@import './footer/footer_docs';
+@import './class/class';
 
 .success {
     color: $success;
@@ -52,4 +31,13 @@
 }
 .text__accent {
     color: $accent;
+}
+
+.fp-Video {
+    border: 1px double black;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: #c0c0c0;
+    margin: 0 auto 0 auto;
 }
